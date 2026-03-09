@@ -1,0 +1,300 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'JetBrains Mono', monospace;
+background:#0a0a0a;
+color:#eee;
+
+}
+
+#particles-js{
+
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+
+}
+
+.navbar{
+
+position:fixed;
+top:0;
+width:100%;
+height:70px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 40px;
+
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+
+border-bottom:1px solid #222;
+
+z-index:1000;
+
+}
+
+.logo{
+color:#00ffff;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#ccc;
+}
+
+.nav-links a:hover{
+color:#00ffff;
+}
+
+/* HERO */
+
+.hero{
+
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+}
+
+.hero h1{
+font-size:70px;
+}
+
+.hero h2{
+color:#00ffff;
+margin:10px 0;
+}
+
+.hero-line{
+
+width:200px;
+height:2px;
+background:#00ffff;
+margin:25px auto;
+
+}
+
+/* TERMINAL WINDOWS */
+
+.terminal{
+
+max-width:1000px;
+margin:80px auto;
+
+background:rgba(15,15,15,0.95);
+
+border-radius:12px;
+
+box-shadow:0 0 25px rgba(0,255,255,0.08);
+
+border:1px solid #222;
+
+overflow:hidden;
+
+scroll-margin-top:100px;
+
+}
+
+.terminal-header{
+
+display:flex;
+align-items:center;
+
+padding:10px 15px;
+
+background:#111;
+
+border-bottom:1px solid #222;
+
+}
+
+.buttons{
+display:flex;
+gap:8px;
+}
+
+.buttons span{
+width:12px;
+height:12px;
+border-radius:50%;
+}
+
+.red{background:#ff5f56;}
+.yellow{background:#ffbd2e;}
+.green{background:#27c93f;}
+
+.terminal-title{
+
+margin-left:15px;
+font-size:14px;
+color:#888;
+
+}
+
+.terminal-body{
+
+padding:50px;
+
+}
+
+.terminal-body h2{
+    margin-bottom:15px;
+}
+
+/* GRID */
+
+.skills-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+margin-top:40px;
+
+}
+
+.skills-grid div{
+
+background:#111;
+padding:20px;
+border-radius:8px;
+border:1px solid #222;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+
+}
+
+.card{
+
+background:#111;
+padding:25px;
+
+border-radius:8px;
+
+border:1px solid #222;
+
+text-decoration:none;
+color:white;
+
+transition:0.25s;
+
+}
+
+.card:hover{
+
+border-color:#00ffff;
+transform:translateY(-5px);
+
+}
+
+.cert-slider{
+
+display:flex;
+gap:20px;
+overflow-x:auto;
+margin-top:30px;
+
+}
+
+.cert-slider img{
+
+height:280px;
+border-radius:6px;
+
+}
+
+
+/* HERO DANGER TERMINAL */
+
+.hero-terminal{
+
+max-width:1000px;
+margin:140px auto 80px auto;
+
+border:1px solid #ff2a2a;
+
+box-shadow:0 0 40px rgba(255,0,0,0.15);
+
+}
+
+.danger-header{
+
+background:#1a0000;
+
+border-bottom:1px solid #ff2a2a;
+
+}
+
+.hero-body{
+
+text-align:center;
+
+}
+
+.prompt{
+
+color:#ff3b3b;
+
+margin-right:10px;
+
+}
+
+.terminal-line{
+
+font-size:16px;
+margin-bottom:20px;
+
+}
+
+.hero-desc{
+
+margin-top:20px;
+color:#aaa;
+
+}
+
+/* TERMINAL OPEN ANIMATION */
+
+.terminal{
+
+opacity:0;
+transform:translateY(40px);
+transition:0.7s ease;
+
+}
+
+.show-terminal{
+
+opacity:1;
+transform:translateY(0);
+
+}
